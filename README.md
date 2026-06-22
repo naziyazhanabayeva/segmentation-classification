@@ -76,8 +76,9 @@ Final predictions land in `${NAME}_hand_crops/predictions_keras8.json`.
   (provides the `pose_to_segments` CLI used in step 2)
 - `classification-models/` — the 8 finetuned `.keras` checkpoints used in
   step 7 (matched by filename prefix: `broad_model*`, `sub_cat1_*` … `sub_cat7_*`).
-  **Not tracked in git** (several files exceed GitHub's 100MB limit) — download
-  them separately and place them in this folder before running step 7.
+  **Not tracked in git** (several files exceed GitHub's 100MB limit) —
+  download them from https://drive.google.com/drive/folders/1x5oKoEGNZiv_qoNPyJ_BIkzdB3tKJ8W0?usp=sharing and place the 8 `.keras`
+  files directly in `classification-models/` before running step 7.
 - `models/hand_landmarker.task` — MediaPipe hand landmark model used by
   `crop_hands_from_frames.py`. **Not tracked in git** — download it from
   [MediaPipe's model index](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker)
