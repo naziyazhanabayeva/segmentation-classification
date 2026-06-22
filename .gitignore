@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+/build/
+*.egg
+
+# Virtual environments (regenerate via README setup instructions)
+venv-main/
+venv-mediapipe/
+.venv/
+
+# Large model weights — not in git (exceed GitHub's 100MB limit / too large to track).
+# Distribute separately (release asset, cloud storage, HF hub) and document in README.
+classification-models/*.keras
+models/*.task
+
+# Sample videos and per-run pipeline outputs (regenerate by running the pipeline on your own video)
+*.mp4
+*.pose
+*.eaf
+*_segments.json
+*_cleaned_segments.json
+*_sign_frames/
+*_hand_crops/
+
+# OS
+.DS_Store
